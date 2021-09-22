@@ -1,0 +1,35 @@
+<SemiconductorModuleTests>
+	<SequenceName>	<StepName>	<StepId>	<TestName>	<TestNumber>	<Pin>	<LowLimitExpression>	<HighLimitExpression>	<ComparisonType>	<ScalingFactor>	<Units>	<EvaluationType>	<FailBin>	<PublishedDataId>	
+	MainSequence	Continuity	ID#:3MfKqpo85xGnSACALyEibC	Continuity	80000001	Vcc	-2	-.5	GELE		V	Numeric Limit	8	Continuity	
+	MainSequence	Continuity	ID#:3MfKqpo85xGnSACALyEibC	Continuity	21	Digital	-1	-0.5	GELE		V	Numeric Limit	8	Continuity	
+	MainSequence	DUT Power Up	ID#:YEJDSps85xGnSACALyEibC	Vcc Voltage	1	VCC	4.5	5.5	GELE		V	Numeric Limit	3	SMUVoltage	
+	MainSequence	DUT Power Up	ID#:YEJDSps85xGnSACALyEibC	Vcc Current	2	Vcc	4	6	GELE	m	A	Numeric Limit	3	SMUCurrent	
+	MainSequence	Leakage	ID#:7c+Sk5s85xGnSACALyEibC	Leakage	30	CS	1	2	GELE	u	A	Numeric Limit	6	Leakage	
+	MainSequence	Leakage	ID#:7c+Sk5s85xGnSACALyEibC	Leakage	31	SCLK	1	2	GELE	u	A	Numeric Limit	6	Leakage	
+	MainSequence	Leakage	ID#:7c+Sk5s85xGnSACALyEibC	Leakage	32	MOSI	1	2	GELE	u	A	Numeric Limit	6	Leakage	
+	MainSequence	Leakage	ID#:7c+Sk5s85xGnSACALyEibC	Leakage	33	MISO	1	2	GELE	u	A	Numeric Limit	6	Leakage	
+	MainSequence	Burst Pattern	ID#:8YjqoJs85xGnSACALyEibC	Functionality	10							Pass/Fail	5	PassFail	
+	MainSequence	Burst Pattern	ID#:8YjqoJs85xGnSACALyEibC	Failure Count	11	MISO			LOG			Numeric Limit		FailCount	
+	MainSequence	Test Module Template	ID#:eLSc9Pf9wEm5kS9leDTUKB						LOG			Numeric Limit			
+	MainSequence	Simple Measurement	ID#:g0QOZZOwF0am5u/11NDinD	Current Pin A	100	A	100	120	GELE	m	A	Numeric Limit	4		
+	MainSequence	Simple Measurement	ID#:g0QOZZOwF0am5u/11NDinD	Current Pin B	101	B	40	60	GELE	m	A	Numeric Limit	4		
+	MainSequence	Simple Measurement	ID#:g0QOZZOwF0am5u/11NDinD	Current Pin C	102	C	4	12	GELE	m	A	Numeric Limit	4		
+	MainSequence	Multiple Measurements with Relay Switching	ID#:tn36u9JgxEucs+PFEl2PTB	Current Pin A Relays Closed	200	A	100	120	GELE	m	A	Numeric Limit	4	CurrentAbs_Clsd	
+	MainSequence	Multiple Measurements with Relay Switching	ID#:tn36u9JgxEucs+PFEl2PTB	Current Pin B Relays Closed	201	B	40	60	GELE	m	A	Numeric Limit	4	CurrentAbs_Clsd	
+	MainSequence	Multiple Measurements with Relay Switching	ID#:tn36u9JgxEucs+PFEl2PTB	Current Pin C Relays Closed	202	C	4	12	GELE	m	A	Numeric Limit	4	CurrentAbs_Clsd	
+	MainSequence	Multiple Measurements with Relay Switching	ID#:tn36u9JgxEucs+PFEl2PTB	Current Pin A Relays Open	203	A	-1	3	GELE	m	A	Numeric Limit	4	CurrentAbs_Open	
+	MainSequence	Multiple Measurements with Relay Switching	ID#:tn36u9JgxEucs+PFEl2PTB	Current Pin B Relays Open	204	B	-1	3	GELE	m	A	Numeric Limit	4	CurrentAbs_Open	
+	MainSequence	Multiple Measurements with Relay Switching	ID#:tn36u9JgxEucs+PFEl2PTB	Current Pin B Relays Open	205	C	-1	3	GELE	m	A	Numeric Limit	4	CurrentAbs_Open	
+	MainSequence	Multiple Measurements with Relay Switching	ID#:tn36u9JgxEucs+PFEl2PTB	Current Dif Pin A	206	A	100	115	GELE	m	A	Numeric Limit	4	CurrentAbs_Diff	
+	MainSequence	Multiple Measurements with Relay Switching	ID#:tn36u9JgxEucs+PFEl2PTB	Current Dif Pin B	207	B	40	58	GELE	m	A	Numeric Limit	4	CurrentAbs_Diff	
+	MainSequence	Multiple Measurements with Relay Switching	ID#:tn36u9JgxEucs+PFEl2PTB	Current Dif Pin C	208	C	4	10	GELE	m	A	Numeric Limit	4	CurrentAbs_Diff	
+	MainSequence	Parameter Indexed Measurements	ID#:dqfS9IpMQk+nHTnxFvU1DD	Current Pin B Low Volt 1	300	B	20	30	GELE	m	A	Numeric Limit	6	1V	
+	MainSequence	Parameter Indexed Measurements	ID#:dqfS9IpMQk+nHTnxFvU1DD	Current Pin B Low Volt 2	301	B	30	40	GELE	m	A	Numeric Limit	6	2V	
+	MainSequence	Parameter Indexed Measurements	ID#:dqfS9IpMQk+nHTnxFvU1DD	Current Pin C Low Volt 1	302	C	0	2	GELE	m	A	Numeric Limit	6	1V	
+	MainSequence	Parameter Indexed Measurements	ID#:dqfS9IpMQk+nHTnxFvU1DD	Current Pin C Low Volt 2	303	C	1	3	GELE	m	A	Numeric Limit	6	2V	
+	MainSequence	Simple Digital Source Capture	ID#:MyJBa7ZW5xGl/QCALyEibC	Capture Register	400	MISO	10	10	GELE			Numeric Limit	5	reg read	
+	Hot	Burst Pattern	ID#:HsJpy5s85xGnSACALyEibC	Functionality	14							Pass/Fail	5	PassFail	
+	Hot	Burst Pattern	ID#:HsJpy5s85xGnSACALyEibC	Failure Count	15	MISO			LOG			Numeric Limit		FailCount	
+	Ambient	Burst Pattern	ID#:HcJpy5s85xGnSACALyEibC	Functionality	12							Pass/Fail	5	PassFail	
+	Ambient	Burst Pattern	ID#:HcJpy5s85xGnSACALyEibC	Failure Count	13	MISO			LOG			Numeric Limit		FailCount	
+</SemiconductorModuleTests>
